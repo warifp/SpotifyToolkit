@@ -30,10 +30,10 @@ Made with ❤️ by <a href="https://github.com/warifp">Wahyu Arif Purnomo</a>
 
 | Name                               | Status             | Information                                        |
 | ---------------------------------- | ------------------ | -------------------------------------------------- |
-| Check all accounts                 | :white_check_mark: | get access token your facebook account             |
-| Check account email                | :white_check_mark: | view your account information                      |
-| Create an account                  | :white_check_mark: | retrieve all your friend's ID data                 |
-| Music or Playlist Downloader       | :white_x_mark: | retrieve all your friend's Email data              |
+| Check all accounts                 | :white_check_mark: | check accounts by list                             |
+| Check account email                | :white_check_mark: | check accounts by email                            |
+| Create an account                  | :white_check_mark: | create account fast                                |
+| Music or Playlist Downloader       | ❌     | download music by list or playlist                 |
 
 
 ## Version
