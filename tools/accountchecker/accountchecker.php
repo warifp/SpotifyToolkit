@@ -5,7 +5,7 @@ error_reporting(0);
  * Update : 2 September 2019
  * Please don't edit, respect me, if you want to be appreciated.
  */
-
+$climate->br()->info('Delimiters "username or email|password');
 $input = $climate->input('List?');
 $list = $input->prompt();
 
