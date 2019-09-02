@@ -33,7 +33,7 @@ Made with ❤️ by <a href="https://github.com/warifp">Wahyu Arif Purnomo</a>
 | Check all accounts                 | :white_check_mark: | check accounts by list                             |
 | Check account email                | :white_check_mark: | check accounts by email                            |
 | Create an account                  | :white_check_mark: | create account fast                                |
-| Music or Playlist Downloader       | ❌     | download music by list or playlist                 |
+| Music or Playlist Downloader       | ❌                 | download music by list or playlist                 |
 
 
 ## Version
