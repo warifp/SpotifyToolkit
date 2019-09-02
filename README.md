@@ -33,7 +33,7 @@ Made with ❤️ by <a href="https://github.com/warifp">Wahyu Arif Purnomo</a>
 | Check all accounts                 | :white_check_mark: | get access token your facebook account             |
 | Check account email                | :white_check_mark: | view your account information                      |
 | Create an account                  | :white_check_mark: | retrieve all your friend's ID data                 |
-| Music or Playlist Downloader       | :white_check_mark: | retrieve all your friend's Email data              |
+| Music or Playlist Downloader       | :white_x_mark: | retrieve all your friend's Email data              |
 
 
 ## Version
