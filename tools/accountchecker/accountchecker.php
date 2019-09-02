@@ -6,7 +6,7 @@ error_reporting(0);
  * Please don't edit, respect me, if you want to be appreciated.
  */
 $climate->br()->info('Delimiters "username or email|password');
-$input = $climate->input('List?');
+$input = $climate->br()->input('List?');
 $list = $input->prompt();
 
 $input_save = $climate->info()->input('Save live results?');
