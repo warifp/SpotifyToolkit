@@ -5,7 +5,7 @@ $progress = $climate->progress()->total(100);
 
 /**
  * Author : Wahyu Arif Purnomo
- * Update : 2 September 2019
+ * Update : 3 September 2019
  * Please don't edit, respect me, if you want to be appreciated.
  */
 
@@ -21,9 +21,9 @@ $banner     = "
 ......00000000000...... ||
 ....000000000000000.... ||
 ...000........000000... || Author  : Wahyu Arif Purnomo
-..000..000000.....000.. || Version : 1.0
+..000..000000.....000.. || Version : 2.0
 ..00000......00000000.. || Create  : 01 September 2019
-..00000000000,...0000.. || Update  : 02 September 2019
+..00000000000,...0000.. || Update  : 03 September 2019
 ..00000.......0000000.. || Name    : Spotify Toolkit
 ...00000000000..0000... || ## Spotify - Music For Everyone
 ....000000000000000.... ||
@@ -65,7 +65,7 @@ if ($lihatmenu == "y"){
     ";
     print $menulist;
 } else if ($lihatmenu == "n") {
-    /** Die menu [WahyuArifPurnomo] */
+    // Die menu [WahyuArifPurnomo]
 }
 
 ################## Pilih Menu ##################
@@ -112,6 +112,6 @@ if($type=="wahyuarifpurnomo"){
 
 /**
  * Author : Wahyu Arif Purnomo
- * Update : 2 September 2019
+ * Update : 3 September 2019
  * Please don't edit, respect me, if you want to be appreciated.
  */

