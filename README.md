@@ -57,6 +57,23 @@ Version 1.0 :
 
 -   Build
 
+Version 2.0 :
+
+    sorry, no video tutorial.
+
+  Changelog :
+
+-   add account information in results menu "check all accounts".
+-   add log live user|pass in folder result/live.log
+
+Version 3.0 :
+
+    sorry, no video tutorial.
+
+  Changelog :
+
+-   add menu "Create an account [mass]"
+
 ## Installation
 
 ### Windows or Linux
