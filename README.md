@@ -23,7 +23,17 @@ Made with ❤️ by <a href="https://github.com/warifp">Wahyu Arif Purnomo</a>
 
 <p align="center">
 <a><br> VERSION 1.0 </br></a>
-  <img src="images/version/1.0.png" width="350" title="Version 1.3" alt="Version 1.3">
+  <img src="images/version/1.0.png" width="350" title="Version 1.0" alt="Version 1.0">
+</p>
+
+<p align="center">
+<a><br> VERSION 2.0 </br></a>
+  <img src="images/version/2.0.png" width="350" title="Version 2.0" alt="Version 2.0">
+</p>
+
+<p align="center">
+<a><br> VERSION 3.0 </br></a>
+  <img src="images/version/3.0.png" width="350" title="Version 3.0" alt="Version 3.0">
 </p>
 
 ## Features in tools
