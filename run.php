@@ -5,7 +5,7 @@ $progress = $climate->progress()->total(100);
 
 /**
  * Author : Wahyu Arif Purnomo
- * Update : 3 September 2019
+ * Update : 5 September 2019
  * Please don't edit, respect me, if you want to be appreciated.
  */
 
@@ -21,9 +21,9 @@ $banner     = "
 ......00000000000...... ||
 ....000000000000000.... ||
 ...000........000000... || Author  : Wahyu Arif Purnomo
-..000..000000.....000.. || Version : 2.0
+..000..000000.....000.. || Version : 3.0
 ..00000......00000000.. || Create  : 01 September 2019
-..00000000000,...0000.. || Update  : 03 September 2019
+..00000000000,...0000.. || Update  : 05 September 2019
 ..00000.......0000000.. || Name    : Spotify Toolkit
 ...00000000000..0000... || ## Spotify - Music For Everyone
 ....000000000000000.... ||
@@ -61,7 +61,8 @@ if ($lihatmenu == "y"){
     [1] Check all accounts
     [2] Check account email
     [3] Create an account
-    [4] Music or Playlist Downloader [Maintenance]
+    [4] Create an account [mass]
+    [5] Music or Playlist Downloader [Maintenance]
     ";
     print $menulist;
 } else if ($lihatmenu == "n") {
@@ -94,8 +95,11 @@ if($pilih==1){
     $namatools = "\e[1;32mCheck account email\e[0m";
 }elseif($pilih==3){
     $type = "tools/createaccount/createaccount";
-    $namatools = "\e[1;32mCreate an account [US]\e[0m";
+    $namatools = "\e[1;32mCreate an account\e[0m";
 }elseif($pilih==4){
+    $type = "tools/mass-createaccount/mass-createaccount";
+    $namatools = "\e[1;32mCreate an account [mass]\e[0m";
+}elseif($pilih==5){
     $type = "tools/maintenance/maintenance";
     $namatools = "\e[1;32mMusic or Playlist Downloader\e[0m";
 }
@@ -112,6 +116,6 @@ if($type=="wahyuarifpurnomo"){
 
 /**
  * Author : Wahyu Arif Purnomo
- * Update : 3 September 2019
+ * Update : 5 September 2019
  * Please don't edit, respect me, if you want to be appreciated.
  */
