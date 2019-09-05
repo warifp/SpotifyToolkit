@@ -43,6 +43,7 @@ Made with ❤️ by <a href="https://github.com/warifp">Wahyu Arif Purnomo</a>
 | Check all accounts                 | :white_check_mark: | check accounts by list                             |
 | Check account email                | :white_check_mark: | check accounts by email                            |
 | Create an account                  | :white_check_mark: | create account fast                                |
+| Create an account [mass]           | :white_check_mark: | create account fast by list file                   |
 | Music or Playlist Downloader       | ❌                 | download music by list or playlist                 |
 
 
